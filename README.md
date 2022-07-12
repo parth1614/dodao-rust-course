@@ -1,4 +1,4 @@
-# Solidity Course
+# Rust Course
 This course consists of summaries of various topics of rust course and the questions
 
 # Contribution

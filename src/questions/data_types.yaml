@@ -2,34 +2,36 @@
   type: SingleChoice
   content: |
     What is the output of the following code snippet:
-     " 
-    ``` fn main() {
-            let x = 12;
-            println!("The value of x is: {x}");
-            x = 8;
-            println!("The value of x is: {x}");
-        } ```
-"
+     
+        ``` 
+            fn main() {
+              let x = 12;
+              println!("The value of x is: {x}");
+              x = 8;
+              println!("The value of x is: {x}");
+            } 
+        ```
+    
   hint: NoHint
   explanation: "Error would occur, because the variable x isn't set as mutable so it's value can't be changed."
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
-    - variables
-  difficulty_level: Low
+  subTopics:
+    - "variables"
+  difficultyLevel: Low
   choices:
-    - content: The value of x is: 8
+    - content: "The value of x is: 8"
 
       key: A
       order: 0
-    - content: Error: the variable x is mutable
+    - content: "Error: the variable x is mutable"
       key: B
       order: 1
-    - content: The value of x is: 12
+    - content: "The value of x is: 12"
       key: C
       order: 2
-    - content: Error: the variable x is immutable
+    - content: "Error: the variable x is immutable"
       key: D
       order: 3
 
@@ -41,9 +43,9 @@
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: 1 byte
 
@@ -67,9 +69,9 @@
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "True"
 
@@ -93,20 +95,20 @@
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
-    - content: let mut x: u32 = 20;
+    - content: "let mut x: u32 = 20;"
       key: A
       order: 0
-    - content: let mut x: i32 = -20;
+    - content: "let mut x: i32 = -20;"
       key: B
       order: 1
-    - content: let mut x: u32 = -20;
+    - content: "let mut x: u32 = -20;"
       key: C
       order: 2
-    - content: let mut x = 20;
+    - content: "let mut x = 20;"
       key: D
       order: 3
 
@@ -119,9 +121,9 @@
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - bit manupilation
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: "257"
       key: A
@@ -139,17 +141,19 @@
 - uuid: 0708f185-46b5-45ee-ac47-3e7e1ca611b3
   type: MultipleChoice
   content: |
-Are Tuples in rust dynamic in nature?
-"Eg:-" ``` let tup: (i32, f64, bool) = (500, 6.4, true); ```
-
+    Are Tuples in rust dynamic in nature?
+    "Eg:-" 
+    ``` 
+      let tup: (i32, f64, bool) = (500, 6.4, true); 
+    ```
   hint: NoHint
   explanation: No explanation
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "Yes"
       key: A
@@ -167,7 +171,7 @@ Are Tuples in rust dynamic in nature?
 - uuid: d11a531f-f32f-4764-a60a-2cc5af348245
   type: MultipleChoice
   content: |
- Select the correct statements for the two String types(“String” and “&str”).
+         Select the correct statements for the two String     types(“String” and “&str”).
           "a. “Strings” are immutable in nature and cannot be modified. "
           "b. “&str” is a primitive data type, whereas “String” is implemented in the standard library."
           "c. To read a file into the strings, we use the read_to_string() method."
@@ -177,9 +181,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - strings
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: Only a
       key: A
@@ -203,9 +207,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: let
       key: A
@@ -229,9 +233,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "{}"
       key: A
@@ -254,9 +258,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: Global 
       key: A
@@ -279,9 +283,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: integers, floating-point numbers, booleans, characters
       key: A
@@ -304,9 +308,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Arrays, Lists, Red-Black Trees
       key: A
@@ -325,21 +329,20 @@ Are Tuples in rust dynamic in nature?
 - uuid: 7fd341f0-4921-4e6e-aa0c-c3897f91d3b2
   type: MultipleChoice
   content: |
-      Which are valid array declarations in rust?
-"
-     ``` let mut arr : {i64, 3} = [2,3,5];
-      let mut arr : {3,3};
-      let mut arr = [2,3,5]; ```
-"
-
+     Which are valid array declarations in rust? 
+     ``` 
+            let mut arr : {i64, 3} = [2,3,5];
+            let mut arr : {3,3};
+            let mut arr = [2,3,5];
+      ```
   hint: Look for the wrong declaration format, you may or may not find it
   explanation: No explanation
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Both a & b
       key: A
@@ -362,9 +365,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: const
       key: A
@@ -388,9 +391,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: Arrays & Tuples
       key: A
@@ -413,9 +416,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: used for dynamic-sized data type
       key: A
@@ -438,9 +441,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Collection of rust libraries
       key: A
@@ -463,9 +466,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: " `std::any::type_name` "
       key: A
@@ -488,9 +491,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: i32 as i64
       key: A
@@ -513,9 +516,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Tuples
       key: A
@@ -538,9 +541,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "<//>"
       key: A
@@ -563,9 +566,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "True"
       key: A
@@ -588,9 +591,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: "`let mut arr : {i32;5} = {5;0};`"
       key: A
@@ -613,9 +616,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: finite heterogeneous compound data types
       key: A
@@ -644,13 +647,13 @@ Are Tuples in rust dynamic in nature?
   
           ```"
   hint: No Hint
-  explanation: "The first print statement should've had ""{;?}"""
+  explanation: "The first print statement should've had {;?}"
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: ("Do", 69, "DAO", 420) & Do
       key: A
@@ -675,9 +678,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: Pseudo-mutability
       key: A
@@ -700,20 +703,20 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
-    - content: let a_int: i64 = 20;
+    - content: "let a_int: i64 = 20;"
       key: A
       order: 0
-    - content: let a_int = i6420;
+    - content: "let a_int = i6420;"
       key: B
       order: 1
-    - content: let a_int = 20i64;
+    - content: "let a_int = 20i64;"
       key: C
       order: 2
-    - content: None of the above
+    - content: "None of the above"
       key: D
       order: 3
 
@@ -725,13 +728,13 @@ Are Tuples in rust dynamic in nature?
 
   hint: Solution being Positive or Negative might make a difference
   explanation: |
-"Here, when initialized, 1 is set as unsigned 32 integer u32. In statement A, it works because  1+2=3, and it's positive. But, 1-2=(-1) and as they were unsigned integers, so they cannot hold a negative value, so this statement doesn't compile"
+      Here, when initialized, 1 is set as unsigned 32 integer u32. In statement A, it works because  1+2=3, and it's positive. But, 1-2=(-1) and as they were unsigned integers, so they cannot hold a negative value, so this statement doesn't compile
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: Only A compiles
       key: A
@@ -756,9 +759,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Compilation Error
       key: A
@@ -783,9 +786,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Moderate
+  difficultyLevel: Moderate
   choices:
     - content: "True"
       key: A
@@ -824,9 +827,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Only 1st print statement shows an output
       key: A
@@ -850,9 +853,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "&"
       key: A
@@ -876,9 +879,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: Once you get a string slice from a string, then you cannot really                 modify that String anymore
       key: A
@@ -902,9 +905,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: High
+  difficultyLevel: High
   choices:
     - content: Panic and crashes the program
       key: A
@@ -927,9 +930,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "True"
       key: A
@@ -953,9 +956,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "True"
       key: A
@@ -984,12 +987,12 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: The code compiles without errors
-    key: A
+      key: A
       order: 0
     - content: The code has errors because of immutability
       key: B
@@ -1011,9 +1014,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - C
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Arrays
       key: A
@@ -1036,9 +1039,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "True"
       key: A
@@ -1062,12 +1065,12 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Weak
-    key: A
+      key: A
       order: 0
     - content: Strict
       key: B
@@ -1088,9 +1091,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     -D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: crate
       key: A
@@ -1113,12 +1116,12 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - D
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: async, await, where, use
-     key: A
+      key: A
       order: 0
     - content: Move, return, mut, while
       key: B
@@ -1138,9 +1141,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: Letter, underscore
       key: A
@@ -1157,17 +1160,16 @@ Are Tuples in rust dynamic in nature?
 
 - uuid: 6ffbcd01-5b77-44bd-a9e1-56d3adb81a61
   type: MultipleChoice
-  content: q What is the result of the following calculation in rust
-	          1.0/0.0
-
+  content: |
+            q What is the result of the following calculation in rust "1.0/0.0"
   hint: hint
   explanation: explanation
   answerKeys:
     - B
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: A positive number
       key: A
@@ -1190,9 +1192,9 @@ Are Tuples in rust dynamic in nature?
   answerKeys:
     - A
   topic: 01_data_types
-  sub_topics:
+  subTopics:
     - variables
-  difficulty_level: Low
+  difficultyLevel: Low
   choices:
     - content: "True"
       key: A
